@@ -6,7 +6,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    
+
                 <div class="d-flex align-items-center">
                     <h2>All Questions</h2>
                     <div class="ml-auto">
@@ -29,13 +29,13 @@
 
                             <div class="status {{ $question->status }}">
                                 <strong>
-                                {{ $question->answers }}
+                                {{ $question->answers_count }}
                                 </strong>
-                                {{\Illuminate\Support\Str::plural('answer', $question->answers)}}
+                                {{\Illuminate\Support\Str::plural('answer', $question->answers_count)}}
                             </div>
 
                             <div class="view">
-        
+
                                 {{ $question->views. " " . \Illuminate\Support\Str::plural('view', $question->views)}}
                             </div>
                         </div>
